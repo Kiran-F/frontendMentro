@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+.stripPara{
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    background-color: #4343d6;
+    color: whitesmoke;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+.stripPara img{
+    position: relative;
+    top: 5px;
+}
+.stripLink{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.stripLink:hover{
+    text-decoration: none;
+}
+nav{
+    background-color: white;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.1);
+   
+    width: 100%;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 70px;
+}
+nav a{
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.6s;
+}
+#heads{
+    padding-left: 10px;
+    list-style: none;
+}
+#logo{
+    position: relative;
+    top: 13px;
+}
+.pinkunderline{
+    text-decoration:underline wavy 2px rgb(250, 164, 178);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li:first-child a{
+    margin-left: auto;
+    width: 15%;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.sidebar a:hover{
+    background-color: whitesmoke;
+}
+.menubtn{
+    display: none;
+}
+#pro{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 3px;
+    margin-left: 2px;
+    font-style: normal;
+}
+.btn{
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    transition: 0.25s transform;
+}
+#blackgithub{
+    background-color: black;
+}
+#sidebargithub{
+    background-color: white;
+    color: black;
+    width: 200px;
+}
+#redgithub{
+    background-color: rgba(252, 33, 33, 0.831);
+    border: none;
+    margin: 8px auto 0px auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    width: 230px;
+    height: 45px;
+}
+.btnText{
+    position: relative;
+    bottom: 2px;
+}
+.btn:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    transition: 0.25s transform;
+    box-shadow: 0px 0px 3px black;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+}
+.First{
+    width: 80%;
+    margin: 50px 90px 16px auto;
+}
+.blueunderline{
+    text-decoration: underline wavy rgb(44, 237, 244);
+}
+.heading{
+    font-size: 55px;
+    color: #3E54A3;
+    font-family: Helvetica, sans-serif, Arial;
+    font-style: italic;
+}
+.description{
+    font-size: 25px;
+    font-family: Helvetica, sans-serif, Arial;
+    font-style: italic;
+    font-weight: 1px;
+}
+.mainImg{
+    padding-left: 25px;
+}
+.secondhead{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px 0;
+}
+.Second{
+    display: flex;
+    flex-direction: row;
+    width: 97vw;
+    margin: 80px auto 50px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.secondeach{
+    text-align: center;
+    margin: 0 15px;
+    width: 20%;
+}
+.secondpara1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.secondpara1 h1{
+    font-size: 22px;
+}
+.secondpara1 p{
+    color: grey;
+    font-size: 16px;
+}
+.latest-challenges{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px auto 0px 30px;
+    grid-row-gap: 2.5rem;
+    grid-column-gap: 1.5rem;
+    position: relative;
+    bottom: 100px;
+}
+.challenge{
+    width: 28vw;
+    height: 33rem;
+    border-radius: 10px;
+    z-index: 10;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(160, 158, 158, 0.518);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.challengeImg{
+    transition: 0.5s transform;
+}
+.challenge div h1{    
+    font-size: 1.5rem;
+}
+.challengeText{
+    padding: 20px 40px 0px 40px;
+}
+h1 a{
+    color: black;
+    text-decoration: none;
+}
+h1 a:hover{
+    text-decoration: underline;
+}
+.challengeText p{
+    margin: 20px 0px;
+}
+.challengeText p:last-child{
+    text-align: justify;
+}
+.html{
+    font-weight: bold;
+    color: rgb(145, 204, 241);
+    margin: 0px 3px;
+}
+.css{
+    font-weight: bold;
+    color: rgb(5, 90, 202);
+    margin: 0px 3px;
+}
+.js{
+    font-weight: bold;
+    color: rgb(248, 135, 154);
+    margin: 0px 3px;
+}
+.three{
+    background-color: rgb(237, 223, 16);
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 40px;
+}
+.intermidiate{
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(237, 223, 16);
+    font-size: 15px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: rgb(237, 223, 16);
+}
+.challenge:hover .challengeImg{
+    transform: scale(1.03);
+    transition: 0.5s transform;
+}
+.challengeBack{
+    width: 95vw;
+    height: 300px;
+    background-color: rgb(11, 50, 136);
+    margin: 10px auto;
+    border-radius: 30px 30px 0px 0px;
+}
+.challengeBack p{
+    text-align: center;
+    position: relative;
+    top: 90px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.viewallchallenges h3{
+    text-align: center;
+    font-family: barlow, Arial, Helvetica, sans-serif;
+}
+.slack div{
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #2121abd8;
+}
+.slack {
+    width: 96vw;
+    height: 80vh;
+    margin: 40px auto;
+    font-family: barlow, Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    background-image: url('images/Screenshot\ \(36\).png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.slackheader{
+    font-size: 30px;
+    padding: 40px;
+    text-align: center;
+}
+.slack p{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.slackinner h1:nth-child(3){
+    text-align: center;
+    width: 90%;
+    margin: 40px auto;
+}
+#email{
+    width: 33%;
+    height: 40px;
+    margin: 20px auto;
+    background-color: transparent;
+}
+#email input{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+#request{
+    background-color: transparent;
+    margin: 50px auto;
+    width: 12%;
+    height: 50px;
+    transition: 0.4s transform;
+}
+#request button{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+#request:hover{
+    transform: scale(1.05);
+    transition: 0.3s transform;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 30px 50px 15px;
+}
+.socialmedia div:first-child{
+    position: relative;
+    bottom: 18px;
+}
+.linkedin{
+    position: relative;
+    top: 3px;
+}
+.linkedin, .twitter, .facebook{
+    padding: 0px 5px;
+}
+.foot{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 10px;
+    justify-content: space-between;
+}
+.stayuptodate{
+    font-family: barlow, Arial, Helvetica, sans-serif;
+}
+.stayuptodate h1{
+    font-size: 25px;
+    color: #3E54A3;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.stayuptodate p{
+    width: 60%;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.extralinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 45%;
+}
+.footfrontend, .explore, .community, .forcompanies{
+    margin: 10px 10px;
+    padding: 0px 5px;
+    width: 100%;
+}
+.footfrontend ul, .explore ul, .community ul, .forcompanies ul{
+    list-style: none;
+}
+.footfrontend h5, .explore h5, .community h5, .forcompanies h5{
+    margin-bottom: 20px;
+}
+.footfrontend ul li a, .explore ul li a, .community ul li a, .forcompanies ul li a{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+.footfrontend ul li a:hover, .explore ul li a:hover, .community ul li a:hover, .forcompanies ul li a:hover{
+    text-decoration: underline;
+}
+.subscribe{
+    width: 120px;
+    height: 40px;
+    margin: 5px 10px 5px 20px;
+    background-color: rgba(249, 40, 40, 0.808);
+    border-radius: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s transform;
+}
+.subscribe:hover{
+    transform: scale(1.05);
+    transition: 0.5s transform;
+}
+.footemail{
+    height: 40px;
+    width: 40%;
+    float: left;
+}
+.footemail input{
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUEREY*/
+/*GREATER TO SMALLER WIDTHS*/
+@media screen and (max-width: 1200px){
+    .extralinks{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footfrontend h5, .explore h5, .community h5, .forcompanies h5{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+    i{
+        display: none;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .mainImg{
+        width: 300px;
+    }
+    .heading{
+        font-size: 45px ;
+    }
+    .description{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 902px){
+    .foot{
+        flex-direction: column;
+
+    }
+}
+@media screen and (max-width: 800px){
+    .mainImg{
+        display: none;
+    }
+    .latest-challenges{
+        grid-template-columns: 1fr 1fr;
+    }
+    .challenge{
+        width: 43vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .secondeach{
+        width: 50%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 650px){
+    .First{
+        width: 70%;
+        margin: 50px 90px 16px auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .Second{
+        flex-direction: column;
+    }
+    .latest-challenges{
+        grid-template-columns: 1fr;
+    }
+    .challenge{
+        width: 80vw;
+        margin: 0px auto 0px 0px;
+    }
+}
+@media screen and (max-width: 450px){
+    .heading{
+        font-size: 40px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    #redgithub{
+        width: 210px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .slack{
+        font-size: 14px;
+        overflow: hidden;
+    }
+    .slack p{
+        margin: 0px;
+    }
+    .slackheader{
+        font-size: 25px;
+        margin: 0px;
+    }
+    .slackinner h1:nth-child(3){
+        margin: 10px auto;
+    }
+    #email{
+        width: 50%;
+        height:20px;
+        margin: 10px auto;
+    }
+    #email input{
+        font-size: 14px;
+        padding: 3px;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+    #request{
+        background-color: transparent;
+        margin: 30px auto;
+        width: 30%;
+        height: 30px;
+        transition: 0.4s transform;
+    }
+    #request button{
+        padding: 3px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .sociallinks{
+        padding: 0px 0px;
+    }
+    .stayuptodate p{
+        width: 100%;
+        font-size: 17px;
+    }
+    .footemail{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .footfrontend, .explore, .community, .forcompanies{
+        margin: 8px 8px;
+    }
+    .extralinks{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .First{
+        width: 80%;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href= "images/Screenshot (30).png">
+    <title>Frontend Mentor</title>
+</head>
+<body>
+    <header>
+<!--blue strip on the top-->
+        <div class="strip">
+            <p class="stripPara">
+                <img src="images/briefcase-svgrepo-com (1).svg" alt="" style="width:23px">
+                Looking to hire developers? <a href="#" class="stripLink">Visit Our Hiring Platform</a>
+            </p>
+        </div>
+<!--Nav bar-->
+        <div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Solution</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Unlock <span>PRO</span></a></li>
+                    <li><a href="#"><button class="btn" id="sidebargithub">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g>
+                            </svg>
+                        <span class="btnText">Login with Github</span>
+                    </button></a></li>
+                </ul>
+                <ul class="navbar">
+                    <li id="heads"><h3><img src="images/screenshot (30).png" alt="logo" height="40px" id="logo"><i><span class="pinkunderline">Frontend</span> Mentor</h3></i></li>
+                    <li class="hideOnMobile"><a href="#" class="navlinks">Challenges</a></li>
+                    <li class="hideOnMobile"><a href="#" class="navlinks">Solution</a></li>
+                    <li class="hideOnMobile"><a href="#" class="navlinks">Resources</a></li>
+                    <li class="hideOnMobile"><a href="#" class="navlinks">Unlock <span id="pro">PRO</span></a></li>
+                    <li class="hideOnMobile"><a href="#"><button class="btn" id="blackgithub">
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+                        <svg width="20px" height="20px" viewBox="0 0 20.00 20.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <title>github [#ffffff142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke-width="0.0002" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#ffffff142]"></path></g></g></g></g></svg>
+                        <span class="btnText">Login with Github</span>
+                    </button></a></li>
+                    <li onclick=showSidebar() class="menubtn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<!--first section-->
+        <section class="First">
+            <div class="first">
+                <div>
+                    <p class="heading"><span class="blueunderline">Improve </span>your front-end 
+                        coding skills by building 
+                        real projects
+                    </p><br>
+                    <p class="description">Solve real world HTML, CSS, JavaScript challenges 
+                        whilst working to professional design. Join 436,242 
+                        developers building projects, reviwing code, and helping 
+                        each other get better.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Screenshot (19).png" alt="team" width="350px" class="mainImg">
+                </div>
+            </div>
+            <!--Red github button-->
+            <button class="btn" id="redgithub">
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+                <svg width="20px" height="20px" viewBox="0 0 20.00 20.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_iconCarrier"> <title>github [#ffffff142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke-width="0.0002" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#ffffff142]"></path></g></g></g></g></svg>
+                <span class="btnText">Login with Github</span>
+            </button>
+        </section>
+
+<!--After red github button (blue svgs in a line) second section-->
+<h3 class="secondhead">HOW IT WORKS</h3>
+        <section class="Second">
+            <div class="secondeach">
+                <div class="svg1">
+                    <svg width="95px" height="95px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path d="M17 17H17.01M17.4 14H18C18.9319 14 19.3978 14 19.7654 14.1522C20.2554 14.3552 20.6448 14.7446 20.8478 15.2346C21 15.6022 21 16.0681 21 17C21 17.9319 21 18.3978 20.8478 18.7654C20.6448 19.2554 20.2554 19.6448 19.7654 19.8478C19.3978 20 18.9319 20 18 20H6C5.06812 20 4.60218 20 4.23463 19.8478C3.74458 19.6448 3.35523 19.2554 3.15224 18.7654C3 18.3978 3 17.9319 3 17C3 16.0681 3 15.6022 3.15224 15.2346C3.35523 14.7446 3.74458 14.3552 4.23463 14.1522C4.60218 14 5.06812 14 6 14H6.6M12 15V4M12 15L9 12M12 15L15 12" stroke="#3E54A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    </svg>
+                </div>
+                <div class="secondpara1">
+                    <h1>Choose your challenge</h1>
+                    <p>Have a look through our collection of web designs. 
+                       Pick one that you feel will be a nice challenge for you at this stage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="secondeach">
+                <div class="svg2">
+                    <svg width="95px" height="95px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#3E54A3" stroke="#3E54A3">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <title>com-laptop-code</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="64px-Line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="com-laptop-code"> </g> <path d="M59,44 L56,44 L56,16 C56,13.794 54.206,12 52,12 L10,12 C7.794,12 6,13.794 6,16 L6,44 L3,44 C2.448,44 2,44.448 2,45 L2,48 C2,50.206 3.794,52 6,52 L56,52 C58.206,52 60,50.206 60,48 L60,45 C60,44.448 59.552,44 59,44 L59,44 Z M8,16 C8,14.897 8.897,14 10,14 L52,14 C53.103,14 54,14.897 54,16 L54,44 L8,44 L8,16 L8,16 Z M58,48 C58,49.103 57.103,50 56,50 L6,50 C4.897,50 4,49.103 4,48 L4,46 L58,46 L58,48 L58,48 Z" id="Shape" fill="#3E54A3"> </path> <path d="M51,16 L11,16 C10.448,16 10,16.448 10,17 L10,41 C10,41.552 10.448,42 11,42 L51,42 C51.552,42 52,41.552 52,41 L52,17 C52,16.448 51.552,16 51,16 L51,16 Z M50,40 L12,40 L12,18 L50,18 L50,40 L50,40 Z" id="Shape" fill="#3E54A3"> </path> <path d="M24.36,34.768 C24.547,34.924 24.774,35 25,35 C25.287,35 25.571,34.877 25.769,34.64 C26.123,34.216 26.065,33.585 25.641,33.232 L20.562,29 L25.64,24.768 C26.064,24.414 26.121,23.784 25.768,23.36 C25.414,22.936 24.784,22.878 24.36,23.232 L18.36,28.232 C18.132,28.422 18,28.703 18,29 C18,29.297 18.132,29.578 18.36,29.768 L24.36,34.768 L24.36,34.768 Z" id="Shape" fill="#3E54A3"> </path> <path d="M36.232,34.64 C36.43,34.877 36.714,35 37.001,35 C37.227,35 37.454,34.924 37.641,34.768 L43.641,29.768 C43.869,29.578 44.001,29.297 44.001,29 C44.001,28.703 43.869,28.422 43.641,28.232 L37.641,23.232 C37.217,22.878 36.586,22.936 36.233,23.36 C35.879,23.784 35.937,24.415 36.361,24.768 L41.439,29 L36.361,33.232 C35.936,33.585 35.878,34.216 36.232,34.64 L36.232,34.64 Z" id="Shape" fill="#3E54A3"> </path> <path d="M28.757,37.97 C28.839,37.991 28.92,38 29.001,38 C29.449,38 29.856,37.697 29.97,37.243 L33.97,21.243 C34.104,20.707 33.778,20.164 33.242,20.03 C32.709,19.895 32.164,20.222 32.029,20.758 L28.029,36.758 C27.896,37.293 28.222,37.836 28.757,37.97 L28.757,37.97 Z" id="Shape" fill="#3E54A3"></path></g></g>
+                    </svg>
+                </div>
+                <div class="secondpara1">
+                    <h1>Code the Design</h1>
+                    <p>
+                        Start the challenge and download all the starter files. 
+                        We provide all the files you'll need to complete the challenge. 
+                        Building it is up to you!
+                    </p>
+                </div>
+            </div>
+
+            <div class="secondeach">
+                <div class="svg3">
+                    <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#3E54A3">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.803 5.33333C13.803 3.49238 15.3022 2 17.1515 2C19.0008 2 20.5 3.49238 20.5 5.33333C20.5 7.17428 19.0008 8.66667 17.1515 8.66667C16.2177 8.66667 15.3738 8.28596 14.7671 7.67347L10.1317 10.8295C10.1745 11.0425 10.197 11.2625 10.197 11.4872C10.197 11.9322 10.109 12.3576 9.94959 12.7464L15.0323 16.0858C15.6092 15.6161 16.3473 15.3333 17.1515 15.3333C19.0008 15.3333 20.5 16.8257 20.5 18.6667C20.5 20.5076 19.0008 22 17.1515 22C15.3022 22 13.803 20.5076 13.803 18.6667C13.803 18.1845 13.9062 17.7255 14.0917 17.3111L9.05007 13.9987C8.46196 14.5098 7.6916 14.8205 6.84848 14.8205C4.99917 14.8205 3.5 13.3281 3.5 11.4872C3.5 9.64623 4.99917 8.15385 6.84848 8.15385C7.9119 8.15385 8.85853 8.64725 9.47145 9.41518L13.9639 6.35642C13.8594 6.03359 13.803 5.6896 13.803 5.33333Z" fill="#3E54A3"/> </g>
+                    </svg>
+                </div>
+                <div class="secondpara1">
+                    <h1>Submit your solution</h1>
+                    <p>
+                        Post your solution on the platform for everyone to see and get feedback on 
+                        your code from other developers in the community.
+                    </p>
+                </div>
+            </div>
+
+            <div class="secondeach">
+                <div class="svg4">
+                    <svg fill="#3E54A3" xmlns="http://www.w3.org/2000/svg" width="95px" height="95px" viewBox="0 0 100 100" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <g> <g> <path d="M79.1,56.5c-0.1-0.4-0.1-0.9,0.2-1.2C81,52.2,82,48.7,82,45c0-11.6-9.9-21-22-21c-5.2,0-10,1.8-13.8,4.7 C58.7,31.4,68,42.2,68,55c0,3.6-0.7,7.1-2.1,10.2c2-0.5,3.9-1.3,5.7-2.4c0.4-0.2,0.8-0.3,1.2-0.1l6.4,2.3c1.1,0.4,2.2-0.7,1.9-1.9 L79.1,56.5z"/> </g> <g> <path d="M40,34c-12.1,0-22,9.4-22,21c0,3.7,1,7.2,2.8,10.3c0.2,0.4,0.3,0.8,0.2,1.2l-2.1,6.7 c-0.4,1.2,0.7,2.3,1.9,1.9l6.4-2.3c0.4-0.1,0.9-0.1,1.2,0.1c3.4,2,7.3,3.1,11.6,3.1c12.1,0,22-9.4,22-21C62,43.4,52.1,34,40,34z M28,59c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C32,57.2,30.2,59,28,59z M40,59c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4 c2.2,0,4,1.8,4,4C44,57.2,42.2,59,40,59z M52,59c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C56,57.2,54.2,59,52,59z"/> </g> </g> </g>
+                    </svg>
+                </div>
+                <div class="secondpara1">
+                    <h1>Give others feedback</h1>
+                    <p>
+                        Thinking critically about other people's code is a crucial skill. 
+                        Help others while deepening your own knowledge by giving feedback on solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+<!--LASTEST CHALLENGE-->
+    <div class="challengeBack">
+        <p>LATEST CHALLENGES</p>
+    </div>
+        <section class="latest-challenges">
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (42).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Password generator app</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three">  3 </span><span class="intermidiate"> INTERMIDIATE</span></p>
+                    <p>
+                        This app will be an excellent test of your HTML, CSS, and JS skills. 
+                        You'll build custom form controls and use JavaScript to generate random passwords.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (43).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Interactive card detail form</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three"> 3 </span><span class="intermidiate">INTERMIDIATE</span></p>
+                    <p>
+                        This fun project will be an excellent way to practice DOM manipulation 
+                        and form validation while also putting your HTML and CSS skills to the test.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (44).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Single-page design portfolio</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three"> 3 </span><span class="intermidiate">INTERMIDIATE</span></p>
+                    <p>
+                        This project will test your layout skills, especially in making the site fully responsive. 
+                        The skills grid is a perfect chance to practice CSS Grid.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (45).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Product preview card component</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three"> 3 </span><span class="intermidiate">INTERMIDIATE</span></p>
+                    <p>
+                        This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (46).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Kanban task management web app</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three"> 3 </span><span class="intermidiate">INTERMIDIATE</span></p>
+                    <p>
+                        In this project, you'll build a fully-functional task management app with a light/dark mode toggle. 
+                        We provide a JSON file, so you can practice working with JSON data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge">
+                <div class="challengeImg"><img src="images/Screenshot (47).png" alt="challenge" width="100%"></div>
+                <div class="challengeText">
+                    <h1><a href="#">Expenses chart component</a></h1>
+                    <p><span class="html"> HTML </span><span class="css"> CSS </span><span class="js"> JS </span>    
+                       <span class="three"> 3 </span><span class="intermidiate">INTERMIDIATE</span></p>
+                    <p>
+                        In this challenge, you'll create a bar chart component from scratch. 
+                        We provide a local JSON file, so you can add the chart data dynamically if you choose.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="viewallchallenges">
+            <h3>View all Challenges</h3>
+            <div class="slack">  <!--SLACK-->
+                <div class="slackinner">
+                    <h1 class="slackheader"><img src="images/Screenshot (36).png" alt="slack" width="35px">slack</h1>
+                    <p>JOIN OUR SLACK COMMUNITY</p>
+                    <h1>Join over 100,000 people taking the challenges, talking about their code, helping each other, and chatting about all things front-end!</h1>
+                    
+                    <div id="email"><input type="email" name="email" placeholder="@email.example.com"></div>
+                    <div id="request"><button>REQUEST INVITE</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--now footer starts from here-->
+    <footer>
+        <div class="socialmedia">
+            <div>
+                <li id="heads"><h3><img src="images/screenshot (30).png" alt="logo" height="40px" id="logo"><i><span class="pinkunderline">Frontend</span> Mentor</h3></i></li>
+            </div>
+            <div class="sociallinks">
+                    <a href="#"><img src="images/twitter.svg" alt="twitter" class="twitter"></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="linkedin" class="linkedin"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="facebook" class="facebook"></a>
+            </div>
+        </div>
+
+
+
+            <section class="foot">
+                <div class="stayuptodate">
+                    <h1>Stay up to date</h1>
+                    <p>with new challenges, featured solutions,
+                        selected articles and our latest news</p>
+                        <div class="footemail">
+                            <input type="email" name="email" placeholder="email@example.com">
+                        </div>
+                    <button class="subscribe">SUBSCRIBE</button>
+                </div>
+                <div class="extralinks">
+                    <div class="footfrontend">
+                        <h5>FRONTEND MENTOR</h5>
+                        <ul>
+                            <li><a href="#">Unlock PRO</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="explore">
+                        <h5>EXPLORE</h5>
+                        <ul>
+                            <li><a href="#">Challenges</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="community">
+                        <h5>COMMUNITY</h5>
+                        <ul>
+                            <li><a href="#">Slack</a></li>
+                            <li><a href="#">Guidlines</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="forcompanies">
+                        <h5>FOR COMPANIES</h5>
+                        <ul>
+                            <li><a href="#">Hire developers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<!--<embed src="index.html" width="100%" height="500px"> to embed another website or image or anything to a website-->
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+</html>
